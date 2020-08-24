@@ -1,0 +1,56 @@
+#app {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin:0px;
+  }
+  
+  ul {
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+  }
+  
+  li {
+    margin: 10px 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  li span {
+    padding: 8px;
+  }
+  
+  #save-button {
+    background: black;
+    color: white;
+    border: none;
+    padding: 10px;
+  }
+  
+  li.low {
+    border: 2px solid green;
+    color: green;
+  }
+  
+  li.high {
+    border: 2px solid red;
+    color:red;
+  }
+
+  button.high{
+      border:none;
+      background-color: red;
+      color:white;
+  }
+
+  button.low{
+      background-color:green;
+      color:white;
+      border:none;
+  }
+  
+  input[type="text"] {
+    padding: 10px;
+    width: 50%;
+  }
+  
