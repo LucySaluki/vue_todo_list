@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To Do List</title>
+    <script src="./js/bundle.js"></script>
+</head>
+<body>
+    <div id="app">
+        <form v-on:submit.prevent="saveToDoItem">
+            <input type="text" id="new-item" v-model="newToDoItem">
+            <input type="submit" value="Save Item">
+        </form>
+        <ul>
+            <li v-for="todo in todos">
+                {{ todo }}
+            </li>
+        </ul>
+
+    </div>
+</body>
+</html>
