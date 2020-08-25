@@ -9,19 +9,19 @@ document.addEventListener('DOMContentLoaded', () => {
           {item: "Clean bathroom", priority:"Low"},
           {item: "Car's MOT", priority:"High"}
         ],
-        newToDoitem:"",
-        newPriority:""
+        newToDoItem: {
+          item:"",
+          priority:""
+        }
     },
     methods: {
         saveToDoItem: function () {
-            this.todos.push({
-              item: this.newToDoItem,
-              priority: this.newPriority
-            });
-            this.newToDoItem = "",
-            this.newPriority = "";
+            this.todos.push(this.newToDoItem);
+            this.newToDoItem = {
+              item:"", 
+              priority:""}
         },
-        togglePriority: function(index, priority) {
+        togglePriority: function(index) {
           if (this.todos[index].priority==='High'){
             this.todos[index].priority='Low';
           } else {
