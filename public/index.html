@@ -19,7 +19,7 @@
         </form>
         <ul>
             <li v-for="(todo, index) in todos" :class="todo.priority==='High' ? 'high':'low'">
-                <span>{{todo.item}}</span>
+                <span v-on:dblclick="removeItem(index)">{{todo.item}}</span>
                 <button v-on:click="togglePriority(index, priority)" :class="todo.priority==='High' ? 'high':'low'">{{todo.priority}}</button>
             </li>
         </ul>

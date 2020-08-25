@@ -27,6 +27,9 @@ document.addEventListener('DOMContentLoaded', () => {
           } else {
             this.todos[index].priority='High';
           }
+        },
+        removeItem: function(index) {
+          this.todos.splice(index,1);
         }
     }
   });
